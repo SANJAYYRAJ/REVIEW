@@ -4,7 +4,7 @@
     <title>Portfolio Creation</title>
     <style>
         body {
-            background-image: url(img\Creambg.jpg);
+            background-image: url(https://i.pinimg.com/originals/d6/09/80/d60980cd1c030e1d016fc43b34ca0300.gif);
             background-repeat: no-repeat;
             background-size: cover;
             font-family: Arial, sans-serif;
@@ -75,7 +75,7 @@
                 <li><a href="#achieve">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><button style="background-color:ghostwhite; " onclick="viewResume()">View Resume</button></li>
-                <li><button style="background-color: ghostwhite; "onclick="downloadResume()">Download Resume</button></li>
+                <li><a href="resumeword.docx" download="resumeword.docx"><button style="background-color: ghostwhite;">Download Resume</button></a></li>
                 
             </ul>
         </nav>
@@ -177,16 +177,7 @@ system</li><br>
     <hr>
     <script>
         function viewResume() {
-            window.open('Sample Resume.pdf', '_blank');
-        }
-
-        function downloadResume() {
-            const link = document.createElement('a');
-            link.href = 'Sample Resume.pdf';
-            link.download = 'Sample Resume.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            window.open('resumeword.docx', '_blank');
         }
     </script>
 </body>
